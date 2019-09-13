@@ -1,4 +1,4 @@
-
+console.log("hello")
 //City-Geo Location Lookup//
 var settings = {
 	"async": true,
