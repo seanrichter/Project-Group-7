@@ -31,6 +31,7 @@ $.ajax(settings).done(function (response) {
 	console.log(response);
 });
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Investors Exchange API Documentation//
 var settings = {
@@ -45,9 +46,13 @@ var settings = {
 }
 
 $.ajax(settings).done(function (response) {
-	console.log(response.quote.close);
+	console.log(response.quote.latestPrice);
+	console.log(response.quote.week52High);
+	console.log(response.quote.week52Low);
+	console.log(response.quote.ytdChange)
 });
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Crypto Asset Ticker API documentation//
 var settings = {
@@ -62,5 +67,8 @@ var settings = {
 }
 
 $.ajax(settings).done(function (response) {
-	console.log(response);
+	console.log(response.coin_name);
+	console.log(response.last_price);
+	console.log(response.price_24hr_pcnt);
+	console.log(response.vol_24hr_pcnt);
 });
