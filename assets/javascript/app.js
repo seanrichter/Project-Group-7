@@ -11,12 +11,16 @@ var settings = {
 		"x-rapidapi-key": "7b1446c9edmshf8adfa5f76f3cc9p15e989jsn47a76e99940a"
 	}
 }
+
 $.ajax(settings).done(function (response) {
-	console.log(response);
+	results = response;
+	console.log(results);
+	$("#beginningCurrency").prepend(response.base_currency_name)
 	console.log(response.base_currency_name);
 	console.log(response.rates.EUR.currency_name);
 	console.log(response.rates.EUR.rate_for_amount);
-});
+})
+
 
 
 // Investors Exchange API Documentation//
