@@ -36,28 +36,100 @@
             <h3 class="panel-title"><small>Cuerrency Converter API:</small></h3>
           </div>
           <div class="panel-body">
+
+            <form role="form" id="currency">
+
+              <div class="form-group">
+          
+                  <label for="text">Beginning Currency: </label>
+          
+                  <input type="search" class="form-control" id="beginningCurrency">
+          
+          
+                  <label for="text">US Dollar Amount: </label>
+          
+                  <input type="search" class="form-control" id="usDollarAmount">
+
             <form role="form">
+              
               <div class="form-group">
+
                 <label for="text">Beginning Currency: </label>
+
                 <h3 type="search" class="form-control" id="beginningCurrency"></h3>
-              </div>
 
+
+                <label for="text">US Dollar Amount: </label>
+
+                <input type="search" class="form-control" id="searchInput">
+
+
+              </div>
+          
               <div class="form-group">
+
+          
                   <label for="text">Ending Currency: </label>
-                  <h3 type="search" class="form-control" id="endingCurrency"></h3>
-              </div>
+          
+                  <input type="search" class="form-control" id="endingCurrency">
+                  <label for="text" id="endingCurrenctName">Euro Amount: </label>
+          
+                  <input type="search" class="form-control" id="eurAmount">
+          
 
+
+                  <label for="text">Ending Currency: </label>
+
+                  <h3 type="search" class="form-control" id="endingCurrency"></h3>
+                  <label for="text">Euro Amount: </label>
+
+                  <input type="search" class="form-control" id="searchInput">
+
+
+              </div>
+          
               <div class="form-group">
+
+          
+                  <label for="text">Exchange Rate: </label>
+                  <input type="search" class="form-control" id="eurRate">
+              </div>
+          
+              <button type="Submit" class="btn btn-default" id="exchangeSubmit">Submit</button>
+          </form>
+          
+              <!-- <div class="form-group">
+                  <label for="text">Retail Merchandise: </label>
+                  <input type="search" class="form-control" id="searchInput">
+              </div> -->
+    
+          
+
+
                   <label for="text">Exchange Rate: </label>
                   <h3 type="search" class="form-control" id="exchangeRate"></h3>
               </div>
 
                 <div class="form-group">
                     <label for="text">Currency Amount:</label>
+
                     <h3 type="search" class="form-control" id="currencyAmount"></h3>
                 </div>
                 <button type="Submit" class="btn btn-primary" id="search">Submit</button>
+
+
+                  <label for="text">Exchange Rate </label>
+                  <input type="search" class="form-control" id="searchInput">
+              </div>
+
+                <!-- <div class="form-group">
+                    <label for="text">Retail Merchandise: </label>
+                    <input type="search" class="form-control" id="searchInput">
+                </div> -->
+                <button type="Submit" class="btn btn-default" id="search">Submit</button>
+
             </form>
+
           </div>
         </div>
       </div>
@@ -71,9 +143,10 @@
           </div>
 
           <div class="panel-body">
-            <form role="form">
+            <form role="form" id="exchange">
 
               <div class="form-group">
+
                 <label for="text">Company Name:</label>
                 <h3 type="search" class="form-control" id="company"></h3>
               </div>
@@ -96,6 +169,25 @@
               <div class="form-group">
                   <label for="text">Year to Date Change (Percent):</label>
                   <h3 type="search" class="form-control" id="ytdChange"></h3>
+
+                <label for="text">Latest Price:</label>
+                <input type="search" class="form-control" id="latestPrice">
+              </div>
+    
+              <div class="form-group">
+                  <label for="text">Week 52 High:</label>
+                  <input type="search" class="form-control" id="week52High">
+              </div>
+    
+              <div class="form-group">
+                  <label for="text">Week 52 Low:</label>
+                  <input type="search" class="form-control" id="week52Low">
+              </div>
+    
+              <div class="form-group">
+                  <label for="text">Year to Date Change:</label>
+                  <input type="search" class="form-control" id="ytdChange">
+
               </div>
                   <button type="Submit" class="btn btn-primary" id="search">Submit</button>
             </form>
@@ -112,10 +204,11 @@
           </div>
 
             <div class="panel-body">
-              <form role="form">
+              <form role="form" id="cryto">
                   
                 <div class="form-group">
                   <label for="text">Coin Name:</label>
+
                   <h3 type="search" class="form-control" id="coinName"></h3>
                 </div>
       
@@ -132,6 +225,24 @@
                 <div class="form-group">
                     <label for="text">Volume 24 Hour (Percent):</label>
                     <h3 type="search" class="form-control" id="volume24hr"></h3>
+
+                  <input type="search" class="form-control" id="coinName">
+                </div>
+      
+                <div class="form-group">
+                    <label for="text">Last Price:</label>
+                    <input type="search" class="form-control" id="lastPrice">
+                </div>
+      
+                <div class="form-group">
+                    <label for="text">Price 24 Hour Percent:</label>
+                    <input type="search" class="form-control" id="price24hr">
+                </div>
+      
+                <div class="form-group">
+                    <label for="text">Volume 24 Hour Percent:</label>
+                    <input type="search" class="form-control" id="vol24hr">
+
                 </div>
                     <button type="Submit" class="btn btn-primary" id="search">Submit</button>
               </form>
