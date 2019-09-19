@@ -1,4 +1,9 @@
-
+body {
+  background-image: url(https://previews.123rf.com/images/annaleni/annaleni1705/annaleni170500284/79033258-green-line-bitcoin-seamless-pattern-vector-illustration-of-outline-tile-background-cryptocurrency-fi.jpg);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+}
 .jumbotron {
     margin-bottom: 100%;
     width: 100%;
@@ -31,6 +36,7 @@
   height: 300px;
   width: 200px;
 }
+
 
 @media screen and (max-width: 768px) {
     body {
