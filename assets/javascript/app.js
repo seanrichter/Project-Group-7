@@ -47,12 +47,23 @@ var settings = {
 $.ajax(settings).done(function (response) {
 	results = response;
 	console.log(results);
+
 	$("#beginningCurrency").prepend(response.base_currency_name)
 	console.log(response.base_currency_name);
+
+	$("#endingCurrency").prepend(response.rates.EUR.currency_name)
 	console.log(response.rates.EUR.currency_name);
+
+	$("#exchangeRate").prepend(response.rates.EUR.rate_for_amount)
 	console.log(response.rates.EUR.rate_for_amount);
+
+	$("#currencyAmount").prepend(response.rates.EUR.rate)
+	console.log(response.rates.EUR.rate);
+
 })
 
+// Investors Exchange API Documentation//
+var settings = {
 
           $("#beginningCurrency").val(response.base_currency_name);
           $("#endingCurrenctName").val(response.rates.EUR.currency_name);
@@ -67,6 +78,7 @@ $("#exchange").submit(function(e){
 alert("Exchange");
 e.preventDefault();
 var exchangeSettings = {
+
 	"async": true,
 	"crossDomain": true,
 	"url": "https://investors-exchange-iex-trading.p.rapidapi.com/stock/intc/book",
@@ -84,9 +96,21 @@ $.ajax(exchangeSettings).done(function (response) {
 $.ajax(settings).done(function (response) {
 
 	console.log(response);
+
+	$("#company").prepend(response.quote.companyName)
+	console.log(response.quote.companyName);
+
+	$("#latestPrice").prepend(response.quote.latestPrice)
 	console.log(response.quote.latestPrice);
+
+	$("#week52high").prepend(response.quote.week52High)
 	console.log(response.quote.week52High);
+
+	$("#week52low").prepend(response.quote.week52Low)
 	console.log(response.quote.week52Low);
+
+
+	$("#ytdChange").prepend(response.quote.ytdChange)
 
 	console.log(response.quote.ytdChange);
 	$("#latestPrice").val(response.quote.latestPrice);
@@ -193,6 +217,7 @@ $("#cryto").submit(function(e){
 // 
 })
 
+
 	console.log(response.quote.ytdChange)
 });
 
@@ -210,9 +235,17 @@ var settings = {
 }
 $.ajax(settings).done(function (response) {
 	console.log(response);
+
+	$("#coinName").prepend(response.coin_name)
 	console.log(response.coin_name);
+
+	$("#lastPrice").prepend(response.last_price)
 	console.log(response.last_price);
+
+	$("#price24hr").prepend(response.price_24hr_pcnt)
 	console.log(response.price_24hr_pcnt);
+
+	$("#volume24hr").prepend(response.vol_24hr_pcnt)
 	console.log(response.vol_24hr_pcnt);
 });
 
